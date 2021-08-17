@@ -6,13 +6,14 @@ body{
   margin: auto;
   padding: 50px;
   color: #000;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* ---- Setup site grid ---- */
 
 .wrapper{
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 0.5fr 3fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
   grid-template-areas: 
   "nav banner logo"
@@ -31,20 +32,26 @@ body{
   border: solid 1px #000;
   padding: 20px;
   background-color: #ddd;
+  border-radius: 10px;
 }
 
 .nav{
   grid-area: nav;
   text-anchor: left;
-
+  border-radius:0%;
+  background-color: #1FFE00;
 }
 
 .banner{
   grid-area: banner;
+  background-color: #ECD68B;
 }
 
 .logo{
   grid-area: logo;
+  height: 199px;
+  width: 300px;
+  background-image: url(images/logo2.jpg);
 }
 
 .main{
@@ -62,4 +69,4 @@ body{
 .footer{
   grid-area: footer;
 }
-/* -000- End of Area Styling -000- */
+/* -000- End of Area Styling -000- */ 
