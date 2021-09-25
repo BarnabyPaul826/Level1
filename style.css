@@ -13,8 +13,8 @@ body{
 
 .wrapper{
   display: grid;
-  grid-template-columns: 0.5fr 3fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto;
   grid-template-areas: 
   "nav banner logo"
   "nav main side"
@@ -40,6 +40,8 @@ body{
   text-anchor: left;
   border-radius:0%;
   background-color: #1FFE00;
+  font-size: 30px;
+  height: 306px;
 }
 
 .banner{
@@ -51,22 +53,31 @@ body{
   grid-area: logo;
   height: 199px;
   width: 300px;
-  background-image: url(images/logo2.jpg);
+  background-image: url(images/logo4.png);
 }
 
 .main{
   grid-area: main;
+  background-color: #ECD68B;
 }
 
 .side{
   grid-area: side;
+  width: 300px;
+  background-color: #ECD68B;
 }
 
 .placeholder{
   grid-area: placeholder;
+  background-color: #ECD68B;
+  height: 199px;
+  width: 446px;
+  background-image: url(images/School_photo3.jpg);
 }
 
 .footer{
   grid-area: footer;
+  width: 1667px;
+  background-color: #ECD68B;
 }
 /* -000- End of Area Styling -000- */ 
